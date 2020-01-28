@@ -16,4 +16,8 @@ export class DataService {
   {
     return this.http.get('https://jsonplaceholder.typicode.com/users');
   }
+  getColors()
+  {
+    return this.http.get('http://color-names.herokuapp.com/v1/');
+  }
 }
