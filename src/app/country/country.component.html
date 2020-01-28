@@ -1,1 +1,11 @@
-<p>country works!</p>
+<div class="container">
+<div class="card-deck">
+    <div *ngFor="let c of countries" class="card mb-5" >
+      <img src="{{c.flag}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h2 class="card-title">{{c.name}}</h2>
+        <p class="card-text">{{c.nativename}}</p>
+      </div>
+    </div>
+  </div>
+  </div>
